@@ -11,8 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps: 
-      - name: 'Test GIT Action'
-        run: pwd
-      - name: 'TEST Printing'
-        run: echo ibrahim
+      - name: 'Test printing content'
+        run: ls
+      - uses: actions/checkout@v3
+      
+      - name: 'Test printing content after'
+        run: ls
       
