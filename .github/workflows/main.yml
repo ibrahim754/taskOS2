@@ -11,10 +11,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps: 
-      - name: 'Test printing content'
-        run: ls
       - uses: actions/checkout@v3
       
-      - name: 'Test printing content after'
-        run: ls
+      - name: 'Test login to dockerhub'
+        run: docker login --username ibrahimsalman --password dckr_pat_gcV5ow9TItUDTN9Ha7JnlWIkwhM 
       
