@@ -1,1 +1,18 @@
+on
+  push:
+    branches:
+      - master
 
+
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: 'Test GIT Action'
+        run: pwd
+      - name: 'TEST Printing'
+        run: echo ibrahim
+      
